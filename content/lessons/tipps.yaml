@@ -1,0 +1,23 @@
+title_ar: "💬 نصائح من المدربة / Tipps von Rabiha"
+title_de: "💬 Tipps von Rabiha / نصائح"
+summary_ar: "نصائح قصيرة وأخطاء شائعة."
+summary_de: "Kurztipps & häufige Fehler."
+body_ar: |
+  <ul>
+    <li>لا تنسَ المراقبة بالمرايا.</li>
+    <li>لا تخف من الخطأ أثناء التدريب.</li>
+    <li>الثقة بالنفس نصف القيادة 🚗✨</li>
+  </ul>
+  <p class="muted">Vergiss nie: Übung macht den Meister!</p>
+body_de: |
+  <ul>
+    <li>Spiegelblick nie vergessen.</li>
+    <li>Fehler sind Teil des Lernens.</li>
+    <li>Selbstvertrauen ist die halbe Miete 🚗✨</li>
+  </ul>
+  <p class="muted">Vergiss nie: Übung macht den Meister!</p>
+video_url: ""
+images: []
+category: "Tips"
+order: 6
+tags: ["Tipps","Fehler"]

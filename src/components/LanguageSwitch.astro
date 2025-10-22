@@ -1,0 +1,14 @@
+---
+const { lang = 'ar' } = Astro.props;
+const path = Astro.url.pathname;
+const isGermanPath = path.startsWith('/de');
+const currentSubpath = isGermanPath ? path.replace('/de', '') || '/' : path;
+const toAR = currentSubpath;
+const toDE = (currentSubpath === '/' ? '/de' : '/de' + currentSubpath);
+---
+<div class="lang-switch">
+  <div class="seg">
+    <a href={toAR} class={lang==='ar'?'active':''}>عربي</a>
+    <a href={toDE} class={lang==='de'?'active':''}>Deutsch</a>
+  </div>
+</div>

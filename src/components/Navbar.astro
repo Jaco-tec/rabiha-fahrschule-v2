@@ -1,0 +1,24 @@
+---
+const { lang = 'ar' } = Astro.props;
+const t = {
+  ar: { lessons: 'الدروس', contact: 'تواصل', title:'مدربة السواقة ربيعة', subtitle:'تدريب عملي شبابي' },
+  de: { lessons: 'Lektionen', contact: 'Kontakt', title:'Fahrlehrerin Rabiha', subtitle:'Modernes Praxis-Training' },
+}[lang];
+const root = lang === 'de' ? '/de' : '';
+---
+<header class="nav">
+  <div class="container" style="display:flex;justify-content:space-between;align-items:center;">
+    <div class="brand">
+      <span style="font-size:1.6rem">🚗</span>
+      <div>
+        <div>{t.title}</div>
+        <div class="muted" style="font-size:.9rem">{t.subtitle}</div>
+      </div>
+      <span class="badge">Praxis</span>
+    </div>
+    <nav class="links">
+      <a class="btn" href={`${root}#lessons`}>{t.lessons}</a>
+      <a class="btn" href={`${root}#contact`}>{t.contact}</a>
+    </nav>
+  </div>
+</header>

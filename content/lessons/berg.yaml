@@ -1,0 +1,15 @@
+title_ar: "🏔️ الانطلاق على التلّة / Anfahren am Berg"
+title_de: "🏔️ Berganfahren / الانطلاق على التلة"
+summary_ar: "باستخدام فرامل اليد أو دواسة الفرامل."
+summary_de: "Mit Handbremse oder Fußbremse."
+body_ar: |
+  <p>باستخدام فرامل اليد (Handbremse) أو دواسة الفرامل (Fußbremse).</p>
+  <p class="muted">Am Berg anfahren erfordert gute Koordination zwischen Kupplung und Gas.</p>
+body_de: |
+  <p>Mit Handbremse oder Fußbremse anfahren.</p>
+  <p class="muted">Am Berg anfahren erfordert gute Koordination zwischen Kupplung und Gas.</p>
+video_url: ""
+images: []
+category: "Control"
+order: 3
+tags: ["Berg","Kupplung"]

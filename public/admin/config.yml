@@ -1,0 +1,29 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/images"
+public_folder: "/images"
+
+site_url: "/"
+logo_url: "/images/hero-driving.png"
+
+collections:
+  - name: "lessons"
+    label: "Lessons / دروس"
+    folder: "content/lessons"
+    extension: "yaml"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Order / ترتيب", name: "order", widget: "number", required: false }
+      - { label: "Category", name: "category", widget: "string", required: false }
+      - { label: "Tags", name: "tags", widget: "list", required: false }
+      - { label: "Title (Arabic)", name: "title_ar", widget: "string" }
+      - { label: "Title (Deutsch)", name: "title_de", widget: "string" }
+      - { label: "Summary (Arabic)", name: "summary_ar", widget: "text" }
+      - { label: "Summary (Deutsch)", name: "summary_de", widget: "text" }
+      - { label: "Body (Arabic, HTML allowed)", name: "body_ar", widget: "markdown" }
+      - { label: "Body (Deutsch, HTML allowed)", name: "body_de", widget: "markdown" }
+      - { label: "Video URL (YouTube embed)", name: "video_url", widget: "string", required: false }
+      - { label: "Images", name: "images", widget: "list", required: false, field: {label: Image, name: image, widget: image} }

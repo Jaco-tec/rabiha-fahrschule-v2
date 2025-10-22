@@ -1,0 +1,27 @@
+title_ar: "🅿️ صف السيارة / Parken"
+title_de: "🅿️ Parken / صف السيارة"
+summary_ar: "صف طولي (Längsparken) خطوة بخطوة."
+summary_de: "Längsparken Schritt für Schritt."
+body_ar: |
+  <h3>صف طولي (Längsparken)</h3>
+  <ol>
+    <li>اقتربي ببطء من السيارة الأمامية.</li>
+    <li>أدر المقود بالكامل نحو الرصيف.</li>
+    <li>راقب المرايا باستمرار.</li>
+  </ol>
+  <p class="muted">Beim Längsparken achte auf Abstand vorne und hinten.</p>
+  <p>📸 (صورة توضيحية أو رسم بسيط)</p>
+body_de: |
+  <h3>Längsparken</h3>
+  <ol>
+    <li>Langsam neben das vordere Fahrzeug vorfahren.</li>
+    <li>Lenkung voll zum Bordstein einschlagen.</li>
+    <li>Spiegel kontinuierlich beobachten.</li>
+  </ol>
+  <p class="muted">Beim Längsparken auf Abstand vorne und hinten achten.</p>
+  <p>📸 (Skizze oder Bild einfügen)</p>
+video_url: ""
+images: []
+category: "Parking"
+order: 2
+tags: ["Parken","Manöver"]

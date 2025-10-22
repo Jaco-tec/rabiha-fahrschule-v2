@@ -1,0 +1,10 @@
+---
+const { lang = 'ar' } = Astro.props;
+const t = {
+  ar: '© مدربة السواقة ربيعة — موقع تعليمي للطلاب',
+  de: '© Fahrlehrerin Rabiha — Lernseite für Fahrschüler:innen'
+}[lang];
+---
+<footer>
+  <div class="container">{t}</div>
+</footer>

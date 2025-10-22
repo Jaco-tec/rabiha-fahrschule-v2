@@ -1,0 +1,51 @@
+---
+import '../../styles/theme.css';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+import LanguageSwitch from '../../components/LanguageSwitch.astro';
+import { getCollection, getEntryBySlug } from 'astro:content';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('lessons');
+  return entries.map(({ slug }) => ({
+    params: { slug },
+  }));
+}
+
+const lang = 'ar';
+const { slug } = Astro.params;
+const entry = await getEntryBySlug('lessons', slug!);
+if (!entry) throw new Error('Lesson not found');
+const d = entry.data;
+const title = d.title_ar;
+const body = d.body_ar;
+---
+<Navbar lang={lang} />
+<main class="container">
+  <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+    <h1 style="margin:0">{title}</h1>
+    <LanguageSwitch lang={lang} />
+  </div>
+  <div class="lesson-meta">
+    {d.tags?.map(t => <span class="pill">{t}</span>)}
+  </div>
+  <article class="card">
+    <div innerHTML={body} />
+  </article>
+  {d.video_url && (
+    <div style="margin-top:16px">
+      <iframe class="video" src={d.video_url} allowfullscreen title="Lesson video"></iframe>
+    </div>
+  )}
+  {d.images?.length ? (
+    <section style="margin-top:16px">
+      <h3>صور توضيحية</h3>
+      <div class="grid">
+        {d.images.map(src => (
+          <img src={src} alt={title} style="width:100%;border:1px solid var(--border);border-radius:12px" />
+        ))}
+      </div>
+    </section>
+  ): null}
+</main>
+<Footer lang={lang} />

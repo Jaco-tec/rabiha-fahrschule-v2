@@ -1,0 +1,21 @@
+title_ar: "🔄 الالتفاف والمراقبة / Abbiegen & Spiegelblick"
+title_de: "🔄 Abbiegen & Spiegelblick / الالتفاف والمراقبة"
+summary_ar: "Blick über die Schulter، إشارات الغماز، مراقبة المشاة والدراجات."
+summary_de: "Blick über die Schulter, Blinker, Fußgänger & Radverkehr beachten."
+body_ar: |
+  <ul>
+    <li>Blick über die Schulter 👀</li>
+    <li>إشارات الغماز</li>
+    <li>مراقبة المشاة والدراجات</li>
+  </ul>
+body_de: |
+  <ul>
+    <li>Blick über die Schulter 👀</li>
+    <li>Blinker setzen</li>
+    <li>Fußgänger und Radfahrende beachten</li>
+  </ul>
+video_url: ""
+images: []
+category: "Turns"
+order: 4
+tags: ["Abbiegen","Sicht"]

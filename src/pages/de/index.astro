@@ -1,0 +1,59 @@
+---
+import '../../styles/theme.css';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+import LanguageSwitch from '../../components/LanguageSwitch.astro';
+import { getCollection } from 'astro:content';
+
+const lang = 'de';
+const lessons = await getCollection('lessons');
+const sorted = lessons.sort((a,b)=>(a.data.order??99)-(b.data.order??99));
+const t = {
+  hero_kicker: 'Praxis Fahrschule',
+  hero_title: 'Modern & einfach — Schritt für Schritt',
+  hero_desc: 'Erklärungen, Bilder und Videos zu Parken, Berganfahren, Abbiegen und Sicherheitskontrolle.',
+  browse: 'Lektionen ansehen',
+  more: 'Mehr lesen'
+};
+---
+<Navbar lang={lang} />
+<main class="container">
+  <section class="hero">
+    <div>
+      <div class="kicker">{t.hero_kicker}</div>
+      <h1 style="margin:0 0 .3rem 0">{t.hero_title}</h1>
+      <p class="muted" style="margin:0 0 1rem 0">{t.hero_desc}</p>
+      <div style="display:flex;gap:10px;align-items:center">
+        <a class="btn primary" href={`/de#lessons`}>{t.browse}</a>
+        <LanguageSwitch lang={lang} />
+      </div>
+    </div>
+    <div>
+      <img src="/images/hero-driving.png" alt="Driving practice" style="max-width:100%;border-radius:16px;border:1px solid var(--border)">
+    </div>
+  </section>
+
+  <section id="lessons" style="margin-top:24px">
+    <h2 style="margin-bottom:8px">Lektionen</h2>
+    <div class="grid">
+      {sorted.map(({id, data, slug}) => (
+        <article class="card">
+          <div class="pill">{data.category ?? 'Training'}</div>
+          <h3 style="margin:.4rem 0">{data.title_de}</h3>
+          <p class="muted">{data.summary_de}</p>
+          <a class="btn" href={`/de/lesson/${slug}`}>Lektion öffnen →</a>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section id="contact" style="margin-top:40px">
+    <h2>Kontakt</h2>
+    <p class="muted">Für Fragen rund um den Praxisunterricht: E-Mail oder WhatsApp.</p>
+    <div style="display:flex;gap:10px;flex-wrap:wrap">
+      <a class="btn" href="mailto:rabiha-fahrschule@example.com">Email</a>
+      <a class="btn" href="https://wa.me/49123456789" target="_blank">WhatsApp</a>
+    </div>
+  </section>
+</main>
+<Footer lang={lang} />

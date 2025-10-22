@@ -1,0 +1,59 @@
+---
+import '../styles/theme.css';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import LanguageSwitch from '../components/LanguageSwitch.astro';
+import { getCollection } from 'astro:content';
+
+const lang = 'ar';
+const lessons = await getCollection('lessons');
+const sorted = lessons.sort((a,b)=>(a.data.order??99)-(b.data.order??99));
+const t = {
+  hero_kicker: 'تدريب القيادة العملي',
+  hero_title: 'تعليم شبابي وبسيط — خطوة بخطوة',
+  hero_desc: 'شروحات وصور وفيديوهات لصف السيارة، الانطلاق على التلّة، الالتفاف، وفحص الأمان.',
+  browse: 'استعراض الدروس',
+  more: 'اقرأ المزيد'
+};
+---
+<Navbar lang={lang} />
+<main class="container">
+  <section class="hero">
+    <div>
+      <div class="kicker">{t.hero_kicker}</div>
+      <h1 style="margin:0 0 .3rem 0">{t.hero_title}</h1>
+      <p class="muted" style="margin:0 0 1rem 0">{t.hero_desc}</p>
+      <div style="display:flex;gap:10px;align-items:center">
+        <a class="btn primary" href={`/#lessons`}>{t.browse}</a>
+        <LanguageSwitch lang={lang} />
+      </div>
+    </div>
+    <div>
+      <img src="/images/hero-driving.png" alt="Driving practice" style="max-width:100%;border-radius:16px;border:1px solid var(--border)">
+    </div>
+  </section>
+
+  <section id="lessons" style="margin-top:24px">
+    <h2 style="margin-bottom:8px">الدروس</h2>
+    <div class="grid">
+      {sorted.map(({id, data, slug}) => (
+        <article class="card">
+          <div class="pill">{data.category ?? 'تدريب'}</div>
+          <h3 style="margin:.4rem 0">{data.title_ar}</h3>
+          <p class="muted">{data.summary_ar}</p>
+          <a class="btn" href={`/lesson/${slug}`}>افتح الدرس →</a>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section id="contact" style="margin-top:40px">
+    <h2>تواصل مع المدربة</h2>
+    <p class="muted">للاستفسار والأسئلة حول الدروس العملية، راسليني على البريد أو واتساب.</p>
+    <div style="display:flex;gap:10px;flex-wrap:wrap">
+      <a class="btn" href="mailto:rabiha-fahrschule@example.com">Email</a>
+      <a class="btn" href="https://wa.me/49123456789" target="_blank">WhatsApp</a>
+    </div>
+  </section>
+</main>
+<Footer lang={lang} />

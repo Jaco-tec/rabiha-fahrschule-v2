@@ -1,0 +1,19 @@
+title_ar: "🎥 فيديوهات وتمارين / Videos & Übungen"
+title_de: "🎥 Videos & Übungen / فيديوهات وتمارين"
+summary_ar: "روابط تمارين مختارة."
+summary_de: "Ausgewählte Übungsvideos."
+body_ar: |
+  <ul>
+    <li>🎬 <a href="https://www.youtube.com" target="_blank">تمرين صف السيارة على YouTube</a></li>
+    <li>🎬 <a href="https://www.youtube.com" target="_blank">Berganfahren erklärt – Video ansehen</a></li>
+  </ul>
+body_de: |
+  <ul>
+    <li>🎬 <a href="https://www.youtube.com" target="_blank">Parkübung auf YouTube</a></li>
+    <li>🎬 <a href="https://www.youtube.com" target="_blank">Berganfahren erklärt – Video ansehen</a></li>
+  </ul>
+video_url: ""
+images: []
+category: "Media"
+order: 7
+tags: ["Video","Übung"]

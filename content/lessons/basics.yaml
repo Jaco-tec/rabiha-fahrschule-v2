@@ -1,0 +1,40 @@
+title_ar: "الأساسيات / Grundlagen"
+title_de: "Grundlagen / الأساسيات"
+summary_ar: "ضبط المقعد والمرايا، تشغيل السيارة، استخدام الغماز، والانطلاق والتوقف."
+summary_de: "Sitz & Spiegel einstellen, Auto starten, Blinker benutzen, Anfahren & Anhalten."
+body_ar: |
+  <h3>ضبط المقعد والمرايا – Sitz und Spiegel einstellen</h3>
+  <ul>
+    <li>عدّل المقعد لتتحكم بالدواسات.</li>
+    <li>اضبط المرايا الداخلية والجانبية.</li>
+  </ul>
+  <h3>استخدام الغماز – Blinker benutzen</h3>
+  <p>استخدم الغماز قبل الالتفاف أو تغيير المسار بوقت كافٍ.</p>
+  <h3>تشغيل السيارة – Auto starten</h3>
+  <p>شغّل بهدوء وراقب العدادات.</p>
+  <h3>الانطلاق والتوقف – Anfahren und Anhalten</h3>
+  <p>نسّق بين القابض والغاز والفرامل.</p>
+  <h4>📝 معلومة سريعة:</h4>
+  <p>قبل الانطلاق، تأكد من الجلسة الصحيحة والمرايا.</p>
+  <p class="muted">Bevor du startest, überprüfe Sitz, Spiegel und Sicherheitsgurt.</p>
+  <p>📷 (أضيفي هنا صورة أو فيديو بسيط)</p>
+body_de: |
+  <h3>Sitz und Spiegel einstellen – ضبط المقعد والمرايا</h3>
+  <ul>
+    <li>Sitz für Pedalkontrolle anpassen.</li>
+    <li>Innen- und Außenspiegel korrekt ausrichten.</li>
+  </ul>
+  <h3>Blinker benutzen – استخدام الغماز</h3>
+  <p>Rechtzeitig blinken vor Abbiegen oder Spurwechsel.</p>
+  <h3>Auto starten – تشغيل السيارة</h3>
+  <p>Ruhig starten und Anzeigen prüfen.</p>
+  <h3>Anfahren und Anhalten – الانطلاق والتوقف</h3>
+  <p>Kupplung, Gas und Bremse koordiniert einsetzen.</p>
+  <h4>📝 Kurz-Tipp:</h4>
+  <p>Bevor du startest, überprüfe Sitz, Spiegel und Sicherheitsgurt.</p>
+  <p>📷 (Füge hier ein Bild oder kurzes Video ein)</p>
+video_url: ""
+images: []
+category: "Basics"
+order: 1
+tags: ["Basics","Safety"]

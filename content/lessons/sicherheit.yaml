@@ -1,0 +1,25 @@
+title_ar: "🧰 فحص الأمان / Sicherheitskontrolle"
+title_de: "🧰 Sicherheitskontrolle / فحص الأمان"
+summary_ar: "الزيت، الماء، الأضواء، الإطارات."
+summary_de: "Öl, Kühlwasser, Licht, Reifen."
+body_ar: |
+  <ul>
+    <li>الزيت – Öl</li>
+    <li>الماء – Kühlwasser</li>
+    <li>الأضواء – Licht</li>
+    <li>الإطارات – Reifen</li>
+  </ul>
+  <p class="muted">Vor jeder Fahrt: Kontrolle ist Pflicht!</p>
+body_de: |
+  <ul>
+    <li>Öl</li>
+    <li>Kühlwasser</li>
+    <li>Licht</li>
+    <li>Reifen</li>
+  </ul>
+  <p class="muted">Vor jeder Fahrt: Kontrolle ist Pflicht!</p>
+video_url: ""
+images: []
+category: "Safety"
+order: 5
+tags: ["Check","Safety"]
